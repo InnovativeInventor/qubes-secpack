@@ -24,7 +24,8 @@ make sure to obtain the master key fingerprint via some other
 channel, as you can be sure that if you were getting a falsified Qubes
 Security Pack it would contain a falsified master key as well.
 
+In addition, to prevent backdating, all Qubes PGP keys, Qubes Security Bulletins, Qubes warrant canaries, and Qubes ISO digests are timestamped using the OpenTimestamps protocol, with the Bitcoin blockchain serving as a timestamp notary. You should make sure to validate the timestamp proofs in the `.ots` files.
+
 For more information about the Qubes Security Pack, including its history and
 rationale, and for detailed instructions for verifying its contents, please see
 its [documentation page](https://www.qubes-os.org/doc/security-pack/).
-
